@@ -84,4 +84,8 @@ shareButton.addEventListener('click', copyUrl);
 openButton.addEventListener('click', openModal);
 closeButton.addEventListener('click', closeModal);
 startButton.addEventListener('click', calculator);
-keyUpEvent.addEventListener('keyup', calculator); 
+keyUpEvent.addEventListener('keyup', function(e){
+    if(e.key === "Enter"){
+        calculator();
+    }
+}); 
