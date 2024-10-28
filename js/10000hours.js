@@ -5,6 +5,7 @@ const shareButton = document.querySelector(".share_btn");
 const result = document.querySelector(".result");
 const modal = document.querySelector("#modal");
 const loading = document.querySelector(".result_loading");
+const keyUpEvent = document.querySelector("#time_value");  
 
 function calculator(){
     const fieldValue = document.querySelector("#field_value");
@@ -83,3 +84,4 @@ shareButton.addEventListener('click', copyUrl);
 openButton.addEventListener('click', openModal);
 closeButton.addEventListener('click', closeModal);
 startButton.addEventListener('click', calculator);
+keyUpEvent.addEventListener('keyup', calculator); 
